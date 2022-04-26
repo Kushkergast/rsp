@@ -6,7 +6,7 @@ let roomUrlList = ["./lobby.html"];
 
 function addRoom (listClassName = 'lobby__list', tag = 'a') {
     const list = document.querySelector(`.${listClassName}`);
-    listChildrenAmount = list.childElementCount;
+    let listChildrenAmount = list.childElementCount;
     switch (listChildrenAmount) {
         case 0: 
         let bottomWrapper = document.querySelector('.wrapper__bottomside');
