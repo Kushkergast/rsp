@@ -58,12 +58,18 @@
                 </section>
             </div>
         </div>
-<!-- Кнопка пригласить друга. Ссылку помещать в атрибут value, класса .invite-friend__button. Также для корректного отображения подсказки ссылку необходимо помещать в атрибут data-bs-content-->
+<!-- Кнопка пригласить друга.  Ссылку помещать в value класса popup__url-->
         <div class="wrapper__bottomside mt-3">
             <section class="invite-friend container mb-4">
                 <div class="row">
+                    <div class="col col-8 col-sm-5 mt-2 mb-4 py-2 popup d-none mx-auto text-center d-flex flex-column justify-content-center align-items-center">
+                        <p class="">Ваша ссылка:</p>
+                        <input class="popup__url" value="http://cumnozhpaper.sosu/bibu">
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col mx-auto text-center d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn btn_theme-main invite-friend__button" data-bs-container="body" data-bs-placement="top" data-toggle="popover" data-bs-trigger="focus" title="Ссылка была скопирована в буфер обмена" data-bs-content="http://cumnozhpaper.sosu/bibu" value="http://cumnozhpaper.sosu/bibu">Пригласить друга</button>
+                        <button type="button" class="btn btn_theme-main invite-friend__button">Пригласить друга</button>
                     </div>
                 </div>
             </section>
