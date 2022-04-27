@@ -21,6 +21,7 @@ if (isMobile == false) {
     inviteButton.addEventListener("click", (event) => copyToClipboard());
 } else {
     inviteButton.addEventListener('click', () => {
+        checkValue (inviteButton);
         popup.classList.toggle('d-none');
         copyToClipboard();
     });
